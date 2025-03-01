@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head >
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<th:block th:insert="header.html"></th:block>
+
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-header text-center bg-primary text-white">
+			<h5>User profile</h5>
+			</div>
+			
+			<div class="card-body">
+					
+						<div class="row p-2">
+							<div class="col-4"><b> Name</b></div>
+							<div class="col-6">	[[${session.validUser.name}]]</div>
+						</div>
+						<div class="row p-2">
+							<div class="col-4"><b> Username</b></div>
+							<div class="col-6">	[[${session.validUser.username}]]</div>
+						</div>		
+			</div>
+
+			<div class="card-footer bg-warning text-center">copyright@2024</div>
+
+		</div>
+
+	</div>
+</body>
+</html>

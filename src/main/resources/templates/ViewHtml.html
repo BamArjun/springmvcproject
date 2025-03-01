@@ -19,68 +19,68 @@
 					
 						<div class="row p-2">
 							<div class="col-4"><b>Employee First Name</b></div>
-							<div class="col-6">	<input type="text" th:field="*{fname}" class="form-control"></div>
+							<div class="col-6">	<input type="text" th:field="*{fname}" class="form-control" readonly></div>
 						</div>
 						
 						<div class="row p-2">
 							<div class="col-4"><b>Employee Last Name</b></div>
-							<div class="col-6">	<input type="text" th:field="*{lname}" class="form-control"></div>
+							<div class="col-6">	<input type="text" th:field="*{lname}" class="form-control" readonly></div>
 						</div>
 
 							<div class="row p-2">
 								<div class="col-4"><b>Gender</b></div>
 								<div class="col-6">
-								<input type="radio" th:field="*{gender}"  value="male">male
-								<input type="radio" th:field="*{gender}"  value="male">female
-								<input type="radio" th:field="*{gender}"  value="male">other
+								<input type="radio" th:field="*{gender}"  value="male" readonly>male
+								<input type="radio" th:field="*{gender}"  value="male" readonly>female
+								<input type="radio" th:field="*{gender}"  value="male" readonly>other
 							    </div>
 							</div>	
 								
 							<div class="row p-2">
 								<div class="col-4"><b>Date Of Birth</b></div>
-								<div class="col-6"><input type="date" th:field="*{dob}" class="form-control"></div>
+								<div class="col-6"><input type="date" th:field="*{dob}" class="form-control" readonly></div>
 							</div>
 
 							<div class="row p-2">
 							<div class="col-4"><b>Employee Phone Number</b></div>
-							<div class="col-6">	<input type="text" th:field="*{phone}" class="form-control"></div>
+							<div class="col-6">	<input type="text" th:field="*{phone}" class="form-control" readonly></div>
 						</div>
 						
 						<div class="row p-2">
 							<div class="col-4"><b>Employee Email</b></div>
-							<div class="col-6">	<input type="email" th:field="*{email}" class="form-control"></div>
+							<div class="col-6">	<input type="email" th:field="*{email}" class="form-control" readonly></div>
 						</div>
 
 
 						<div class="row p-2">
 							<div class="col-4"><b>Company Name</b></div>
-							<div class="col-6">	<input type="text" th:field="*{companyname}" class="form-control"></div>
+							<div class="col-6">	<input type="text" th:field="*{companyname}" class="form-control" readonly></div>
 						</div>
 
 						<div class="row p-2">
 							<div class="col-4"><b>Post</b></div>
-							<div class="col-6">	<input type="text" th:field="*{post}" class="form-control"></div>
+							<div class="col-6">	<input type="text" th:field="*{post}" class="form-control" readonly></div>
 						</div>
 
 						<div class="row p-2">
 							<div class="col-4"><b> Employee Salary</b></div>
-							<div class="col-6">	<input type="number" th:field="*{salary}" class="form-control"></div>
+							<div class="col-6">	<input type="number" th:field="*{salary}" class="form-control" readonly></div>
 						</div>
 
 						<div class="row p-2">
 							<div class="col-4"><b>Employee Join Date</b></div>
-							<div class="col-6">	<input type="date" th:field="*{joindate}" class="form-control"></div>
+							<div class="col-6">	<input type="date" th:field="*{joindate}" class="form-control" readonly></div>
 						</div>
 
 						<div class="row p-2">
 							<div class="col-4"><b>Country</b></div>
-							<div class="col-6">	<input type="text" th:field="*{address.country}" class="form-control">
+							<div class="col-6">	<input type="text" th:field="*{address.country}" class="form-control" readonly>
 							</div>
 						</div>
 							
 						<div class="row p-2">
 							<div class="col-4"><b>City</b></div>
-							<div class="col-6">	<input type="text" th:field="*{address.city}" class="form-control">
+							<div class="col-6">	<input type="text" th:field="*{address.city}" class="form-control" readonly>
 							</div>
 						</div>
 						
@@ -88,7 +88,7 @@
 							<div class="col-4"><b>State</b></div>
 							<div class="col-6">	
 							<select th:field="*{address.state}" class="form-control">
-							<option value="state1">State-1</option>
+							<option value="state1" >State-1</option>
 							<option value="state2">State-2</option>
 							<option value="state3">State-3</option>
 							<option value="state4">State-4</option>
@@ -101,7 +101,7 @@
 
 						<div class="row p-2">
 							<div class="col-4"><b>Zip Code</b></div>
-							<div class="col-6">	<input type="text" th:field="*{address.zipcode}" class="form-control">
+							<div class="col-6">	<input type="text" th:field="*{address.zipcode}" class="form-control" readonly>
 							</div>
 						</div>
 						
@@ -109,10 +109,10 @@
 						<div class="row p-2">
 							<div class="col-4"><b>Project</b></div>
 							<div class="col-6">	
-							<input type="checkbox" th:field="*{projects}" value="project1">Project-1
-							<input type="checkbox" th:field="*{projects}" value="project2">Project-2
-							<input type="checkbox" th:field="*{projects}" value="project3">Project-3
-							<input type="checkbox" th:field="*{projects}" value="project4">Project-4							
+							<input type="checkbox" th:field="*{projects}" value="project1" readonly>Project-1
+							<input type="checkbox" th:field="*{projects}" value="project2" readonly>Project-2
+							<input type="checkbox" th:field="*{projects}" value="project3"readonly>Project-3
+							<input type="checkbox" th:field="*{projects}" value="project4"readonly>Project-4							
 							</div>
 						</div>						
 						<div class="row p-2">
@@ -143,4 +143,4 @@
 
 	</div>
 </body>
-</html>
+</html> 

@@ -36,10 +36,27 @@
             <li class="nav-item">
           <a class="nav-link" href="/employeelist">Employee Detail</a>
         </li>
+        
+            <li class="nav-item">
+          <a class="nav-link" href="/gallary">Gallery</a>
+        </li>  
+        
+         <li class="nav-item">
+          <a class="nav-link" href="/upload">Upload</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="profile">Profile</a>
+        </li>  
+         <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/productgallery">ProductGallery</a>
+        </li>
       </ul>
       
       <form class="d-flex" action="/logout" method="get">
-      <h6 style="color: green">welcome to homepage:[[${uname}]]</h6>  &nbsp; &nbsp;
+      <h6 style="color: green">welcome to homepage:[[${session.validUser.username}]]</h6>  &nbsp; &nbsp;
       
         <button class="btn btn-danger" type="submit">Logout</button>
       </form>
